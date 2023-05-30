@@ -1,6 +1,9 @@
-﻿
-namespace mediatek
+﻿namespace mediatek
+
 {
+    /// <summary>
+    /// formulaire de gestion
+    /// </summary>
     partial class FormGestion
     {
         /// <summary>

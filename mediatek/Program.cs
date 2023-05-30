@@ -6,6 +6,9 @@ using System.Windows.Forms;
 
 namespace mediatek
 {
+    /// <summary>
+    /// classe Program
+    /// </summary>
     static class Program
     {
         /// <summary>

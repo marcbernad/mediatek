@@ -1,6 +1,8 @@
-﻿
-namespace mediatek
+﻿namespace mediatek
 {
+    /// <summary>
+    /// formulaire de connexion
+    /// </summary>
     partial class FormConnexion
     {
         /// <summary>
