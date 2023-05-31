@@ -12,7 +12,7 @@ namespace mediatek.dal
         /// <summary>
         /// nom de connexion à la bdd
         /// </summary>
-        private static readonly string connectionName = "View.Properties.Settings.mediatekConnectionString";
+        private static readonly string connectionName = "mediatek.Properties.Settings.mediatekConnectionString";
         /// <summary>
         /// instance unique de la classe
         /// </summary>

@@ -12,6 +12,9 @@ namespace mediatek
 {
     public partial class FormGestion : Form
     {
+        /// <summary>
+        /// Conrtuction des composants graphiques et appel des autres initialisations
+        /// </summary>
         public FormGestion()
         {
             InitializeComponent();
