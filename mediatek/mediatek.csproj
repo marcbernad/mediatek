@@ -61,16 +61,16 @@
     <Compile Include="dal\PersonnelAccess.cs" />
     <Compile Include="dal\ResponsableAccess.cs" />
     <Compile Include="dal\ServiceAccess.cs" />
-    <Compile Include="FormConnexion.cs">
+    <Compile Include="View\FormConnexion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormConnexion.Designer.cs">
+    <Compile Include="View\FormConnexion.Designer.cs">
       <DependentUpon>FormConnexion.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormGestion.cs">
+    <Compile Include="View\FormGestion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormGestion.Designer.cs">
+    <Compile Include="View\FormGestion.Designer.cs">
       <DependentUpon>FormGestion.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Absence.cs" />
@@ -80,10 +80,10 @@
     <Compile Include="Model\Service.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormConnexion.resx">
+    <EmbeddedResource Include="View\FormConnexion.resx">
       <DependentUpon>FormConnexion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormGestion.resx">
+    <EmbeddedResource Include="View\FormGestion.resx">
       <DependentUpon>FormGestion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -109,9 +109,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="View\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\imgLivres.png" />
   </ItemGroup>
