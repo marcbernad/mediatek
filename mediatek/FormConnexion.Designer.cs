@@ -80,6 +80,7 @@
             // 
             this.txtPwd.Location = new System.Drawing.Point(353, 368);
             this.txtPwd.Name = "txtPwd";
+            this.txtPwd.PasswordChar = '*';
             this.txtPwd.Size = new System.Drawing.Size(344, 26);
             this.txtPwd.TabIndex = 5;
             // 
@@ -96,6 +97,7 @@
             // 
             // FormConnexion
             // 
+            this.AcceptButton = this.btnConnexion;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(970, 605);

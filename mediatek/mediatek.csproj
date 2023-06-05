@@ -54,8 +54,13 @@
   <ItemGroup>
     <Compile Include="bddManager\BddManager.cs" />
     <Compile Include="controller\FormConnexionController.cs" />
+    <Compile Include="controller\FormGestionController.cs" />
+    <Compile Include="dal\AbsenceAccess.cs" />
     <Compile Include="dal\Access.cs" />
+    <Compile Include="dal\MotifAccess.cs" />
+    <Compile Include="dal\PersonnelAccess.cs" />
     <Compile Include="dal\ResponsableAccess.cs" />
+    <Compile Include="dal\ServiceAccess.cs" />
     <Compile Include="FormConnexion.cs">
       <SubType>Form</SubType>
     </Compile>

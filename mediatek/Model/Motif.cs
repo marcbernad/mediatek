@@ -32,5 +32,14 @@ namespace mediatek.Model
         /// getter et setter sur Libelle
         /// </summary>
         public string Libelle { get; set; }
+
+        /// <summary>
+        /// Définit l'information à afficher (juste le libelle)
+        /// </summary>
+        /// <returns>libelle du motif</returns>
+        public override string ToString()
+        {
+            return this.Libelle;
+        }
     }
 }

@@ -14,14 +14,14 @@ namespace mediatek.Model
         /// <summary>
         /// valorise les propriétés
         /// </summary>
-        /// <param name="idPersonnel"></param>
-        /// <param name="idMotif"></param>
+        /// <param name="idpersonnel"></param>
+        /// <param name="motif"></param>
         /// <param name="dateDebut"></param>
         /// <param name="dateFin"></param>
-        public Absence(int idPersonnel, int idMotif, DateTime dateDebut, DateTime dateFin)
+        public Absence(int idpersonnel, DateTime dateDebut, DateTime dateFin, Motif motif)
         {
-            this.IdPersonnel = idPersonnel;
-            this.IdMotif = idMotif;
+            this.Idpersonnel = idpersonnel;
+            this.Motif = motif;
             this.DateDebut = dateDebut;
             this.DateFin = dateFin;
 
@@ -30,12 +30,12 @@ namespace mediatek.Model
         /// <summary>
         /// getter sur IdPersonnel
         /// </summary>
-        public int IdPersonnel { get; }
+        public int Idpersonnel { get; }
 
         /// <summary>
-        /// getter sur IdMotif
+        /// getter et setter sur IdMotif
         /// </summary>
-        public int IdMotif { get; }
+        public Motif Motif { get; set; }
 
         /// <summary>
         /// getter et setter sur DateDebut

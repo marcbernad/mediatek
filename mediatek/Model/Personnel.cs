@@ -15,19 +15,19 @@ namespace mediatek.Model
         /// valorise les propriétés
         /// </summary>
         /// <param name="idpersonnel"></param>
-        /// <param name="idservice"></param>
+        /// <param name="service"></param>
         /// <param name="nom"></param>
         /// <param name="prenom"></param>
         /// <param name="tel"></param>
         /// <param name="mail"></param>
-        public Personnel(int idpersonnel, int idservice, string nom, string prenom, string tel, string mail)
+        public Personnel(int idpersonnel, string nom, string prenom, string tel, string mail, Service service)
         {
             this.Idpersonnel = idpersonnel;
-            this.Idservice = idservice;
             this.Nom = nom;
             this.Prenom = prenom;
             this.Tel = tel;
             this.Mail = mail;
+            this.Service = service;
         }
 
         /// <summary>
@@ -36,9 +36,9 @@ namespace mediatek.Model
         public int Idpersonnel { get; }
 
         /// <summary>
-        /// getter sur IdService
+        /// getter et setter sur IdService
         /// </summary>
-        public int Idservice { get; }
+        public Service Service { get; set; }
 
         /// <summary>
         /// getter et setter sur Nom

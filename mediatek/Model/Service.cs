@@ -31,5 +31,15 @@ namespace mediatek.Model
         /// getter et setter sur Nom
         /// </summary>
         public string Nom { get; set; }
+
+
+        /// <summary>
+        /// Définit l'information à afficher (juste le nom)
+        /// </summary>
+        /// <returns>nom du service</returns>
+        public override string ToString()
+        {
+            return this.Nom;
+        }
     }
 }
