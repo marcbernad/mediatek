@@ -320,7 +320,6 @@ namespace mediatek.View
                 RemplirListeMotifs();
                 EnCoursDeModifAbsences(false);
                 lblAffichage.Text = "Liste des absences";
-
             }
             else
             {
