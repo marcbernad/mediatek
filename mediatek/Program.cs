@@ -19,7 +19,7 @@ namespace mediatek
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormConnexion());
+            Application.Run(new View.FormConnexion());
         }
     }
 }

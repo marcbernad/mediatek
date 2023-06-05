@@ -1,5 +1,4 @@
-﻿namespace mediatek
-
+﻿namespace mediatek.View
 {
     /// <summary>
     /// formulaire de gestion

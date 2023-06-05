@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace mediatek
+namespace mediatek.View
 {
     /// <summary>
     /// fenêtre de gestion du personnel

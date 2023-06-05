@@ -20,7 +20,8 @@
     <Language>en-US</Language>
     <DocumentationSources>
       <DocumentationSource sourceFile="bin\Debug\mediatek.xml" />
-<DocumentationSource sourceFile="bin\Debug\mediatek.exe" /></DocumentationSources>
+      <DocumentationSource sourceFile="bin\Debug\mediatek.exe" />
+    </DocumentationSources>
     <HelpFileFormat>Website</HelpFileFormat>
     <SyntaxFilters>C#</SyntaxFilters>
     <PresentationStyle>Default2022</PresentationStyle>
