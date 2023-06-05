@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace mediatek.Model
 {
@@ -33,7 +29,7 @@ namespace mediatek.Model
         public int Idpersonnel { get; }
 
         /// <summary>
-        /// getter et setter sur IdMotif
+        /// getter et setter sur Motif
         /// </summary>
         public Motif Motif { get; set; }
 

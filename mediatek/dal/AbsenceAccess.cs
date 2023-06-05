@@ -1,9 +1,6 @@
 ﻿using mediatek.Model;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace mediatek.dal
 {
@@ -67,7 +64,7 @@ namespace mediatek.dal
         /// <summary>
         /// Demande de suppression d'une absence
         /// </summary>
-        /// <param name="absence">objet developpeur à supprimer</param>
+        /// <param name="absence">objet absence à supprimer</param>
         public void DelAbsence(Absence absence)
         {
             if (access.Manager != null)
@@ -94,14 +91,13 @@ namespace mediatek.dal
         /// <summary>
         /// Demande d'ajout d'une absence
         /// </summary>
-        /// <param name="absence">objet developpeur à ajouter</param>
+        /// <param name="absence">objet absence à ajouter</param>
         public void AddAbsence(Absence absence)
         {
             if (access.Manager != null)
             {
                 string req = "insert into absence(idpersonnel, datedebut, idmotif, datefin) ";
                 req += "values (@idpersonnel, @datedebut, @idmotif, @datefin);";
-                Console.WriteLine(req);
                 Dictionary<string, object> parameters = new Dictionary<string, object> {
                     { "@idpersonnel", absence.Idpersonnel },                   
                     { "@datedebut", absence.DateDebut },
@@ -123,7 +119,7 @@ namespace mediatek.dal
         /// <summary>
         /// Demande de modification d'une absence
         /// </summary>
-        /// <param name="absence">objet developpeur à modifier</param>
+        /// <param name="absence">objet absence à modifier</param>
         public void UpdateAbsence(Absence absence)
         {
             if (access.Manager != null)

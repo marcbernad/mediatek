@@ -1,9 +1,6 @@
 ﻿using mediatek.Model;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace mediatek.dal
 {
@@ -28,7 +25,7 @@ namespace mediatek.dal
         /// <summary>
         /// Récupère et retourne les personnels
         /// </summary>
-        /// <returns>liste des profils</returns>
+        /// <returns>liste des personnels</returns>
         public List<Personnel> GetLesPersonnels()
         {
             List<Personnel> lesPersonnels = new List<Personnel>();
@@ -62,7 +59,7 @@ namespace mediatek.dal
         /// <summary>
         /// Demande de suppression d'un personnel
         /// </summary>
-        /// <param name="personnel">objet developpeur à supprimer</param>
+        /// <param name="personnel">objet personnel à supprimer</param>
         public void DelPersonnel(Personnel personnel)
         {
             if (access.Manager != null)
@@ -86,7 +83,7 @@ namespace mediatek.dal
         /// <summary>
         /// Demande d'ajout d'un personnel
         /// </summary>
-        /// <param name="personnel">objet developpeur à ajouter</param>
+        /// <param name="personnel">objet personnel à ajouter</param>
         public void AddPersonnel(Personnel personnel)
         {
             if (access.Manager != null)
@@ -115,7 +112,7 @@ namespace mediatek.dal
         /// <summary>
         /// Demande de modification d'un personnel
         /// </summary>
-        /// <param name="personnel">objet developpeur à modifier</param>
+        /// <param name="personnel">objet personnel à modifier</param>
         public void UpdatePersonnel(Personnel personnel)
         {
             if (access.Manager != null)

@@ -1,9 +1,6 @@
 ﻿using mediatek.Model;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace mediatek.dal
 {
@@ -26,9 +23,9 @@ namespace mediatek.dal
         }
 
         /// <summary>
-        /// Récupère et retourne les services
+        /// Récupère et retourne les motifs
         /// </summary>
-        /// <returns>liste des services</returns>
+        /// <returns>liste des motifs</returns>
         public List<Motif> GetLesMotifs()
         {
             List<Motif> lesMotifs = new List<Motif>();

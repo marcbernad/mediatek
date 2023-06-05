@@ -1,14 +1,7 @@
 ﻿using mediatek.controller;
 using mediatek.Model;
-using mediatek.dal;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace mediatek
@@ -49,7 +42,7 @@ namespace mediatek
 
 
         /// <summary>
-        /// Conrtuction des composants graphiques et appel des autres initialisations
+        /// Construction des composants graphiques et appel des autres initialisations
         /// </summary>
         public FormGestion()
         {
@@ -91,6 +84,9 @@ namespace mediatek
             cboService.DataSource = bdgService;
         }
 
+        /// <summary>
+        /// Affiche les motifs
+        /// </summary>
         private void RemplirListeMotifs()
         {
             List<Motif> lesMotifs = controller.GetLesMotifs();
@@ -158,6 +154,11 @@ namespace mediatek
             }
         }
 
+        /// <summary>
+        /// Affiche les informations du personnel sélectionné dans la zone de saisie pour modification
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnModifierPersonnel_Click(object sender, EventArgs e)
         {
             if (dgvPersonnel.SelectedRows.Count > 0)
@@ -305,6 +306,11 @@ namespace mediatek
             }
         }
 
+        /// <summary>
+        /// Affiche les absences du personnel sélectionné
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAfficherAbsences_Click(object sender, EventArgs e)
         {
             if (dgvPersonnel.SelectedRows.Count > 0)
@@ -321,6 +327,11 @@ namespace mediatek
             }
         }
 
+        /// <summary>
+        /// Retour à l'affichage de la liste des personnels depuis l'affichage des absences
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAfficherPersonnel_Click(object sender, EventArgs e)
         {
             RemplirListePersonnels();
@@ -328,6 +339,11 @@ namespace mediatek
             EnCoursDeModifPersonnel(false);
         }
 
+        /// <summary>
+        /// Affiche les informations de l'absence sélectionnée dans la zone de saisie pour modification
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnModifierAbsences_Click(object sender, EventArgs e)
         {
             if (dgvPersonnel.SelectedRows.Count > 0)
@@ -344,6 +360,11 @@ namespace mediatek
             }
         }
 
+        /// <summary>
+        /// Supprime l'absence sélectionnée après confirmation
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSupprimerAbsences_Click(object sender, EventArgs e)
         {
             if (dgvPersonnel.SelectedRows.Count > 0)

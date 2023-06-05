@@ -1,7 +1,6 @@
 ﻿using mediatek.dal;
 using mediatek.Model;
 using System.Collections.Generic;
-using System.Text.RegularExpressions;
 
 namespace mediatek.controller
 {

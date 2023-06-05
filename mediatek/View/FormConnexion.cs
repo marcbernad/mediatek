@@ -1,13 +1,6 @@
 ﻿using mediatek.Model;
 using mediatek.controller;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace mediatek
@@ -37,6 +30,11 @@ namespace mediatek
             controller = new FormConnexionController();
         }
 
+        /// <summary>
+        /// connecte l'utilisateur si les identifiants sont correctes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConnexion_Click(object sender, EventArgs e)
         {
             String login = txtLogin.Text;
