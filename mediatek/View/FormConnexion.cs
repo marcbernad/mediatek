@@ -6,6 +6,9 @@ using mediatek;
 
 namespace mediatek.View
 {
+    /// <summary>
+    /// fenêtre de connexion
+    /// </summary>
     public partial class FormConnexion : Form
     {
         /// <summary>
