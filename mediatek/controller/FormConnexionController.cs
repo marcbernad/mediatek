@@ -10,7 +10,7 @@ namespace mediatek.controller
     public class FormConnexionController
     {
         /// <summary>
-        /// objet d'accès aux opérations possibles sur Developpeur
+        /// objet d'accès aux opérations possibles sur Responsable
         /// </summary>
         private readonly ResponsableAccess responsableAccess;
 

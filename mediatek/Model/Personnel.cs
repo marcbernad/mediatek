@@ -30,7 +30,7 @@
         public int Idpersonnel { get; }
 
         /// <summary>
-        /// getter et setter sur IdService
+        /// getter et setter sur Service
         /// </summary>
         public Service Service { get; set; }
 

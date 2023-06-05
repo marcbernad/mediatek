@@ -10,7 +10,7 @@ namespace mediatek.controller
     public class FormGestionController
     {
         /// <summary>
-        /// objet d'accès aux opérations possibles sur Developpeur
+        /// objet d'accès aux opérations possibles sur Personnel
         /// </summary>
         private readonly PersonnelAccess personnelAccess;
         /// <summary>
@@ -38,7 +38,7 @@ namespace mediatek.controller
         }
 
         /// <summary>
-        /// Récupère et retourne les infos des développeurs
+        /// Récupère et retourne les infos des personnels
         /// </summary>
         /// <returns>liste des personnels</returns>
         public List<Personnel> GetLesPersonnels()
@@ -76,14 +76,14 @@ namespace mediatek.controller
         /// <summary>
         /// Demande de suppression d'un personnel
         /// </summary>
-        /// <param name="personnel">objet developpeur à supprimer</param>
+        /// <param name="personnel">objet personnel à supprimer</param>
         public void DelPersonnel(Personnel personnel)
         {
             personnelAccess.DelPersonnel(personnel);
         }
 
         /// <summary>
-        /// Demande d'ajout d'un profil 
+        /// Demande d'ajout d'un personnel 
         /// </summary>
         /// <param name="personnel"></param>
         public void AddPersonnel(Personnel personnel)
@@ -92,9 +92,9 @@ namespace mediatek.controller
         }
 
         /// <summary>
-        /// Demande de modification d'un développeur
+        /// Demande de modification d'un personnel
         /// </summary>
-        /// <param name="personnel">objet developpeur à modifier</param>
+        /// <param name="personnel">objet personnel à modifier</param>
         public void UpdatePersonnel(Personnel personnel)
         {
             personnelAccess.UpdatePersonnel(personnel);
