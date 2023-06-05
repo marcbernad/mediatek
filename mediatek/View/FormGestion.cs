@@ -319,6 +319,7 @@ namespace mediatek.View
                 RemplirListeAbsences(personnel);
                 RemplirListeMotifs();
                 EnCoursDeModifAbsences(false);
+                lblAffichage.Text = "Liste des absences";
 
             }
             else
@@ -337,6 +338,7 @@ namespace mediatek.View
             RemplirListePersonnels();
             RemplirListeServices();
             EnCoursDeModifPersonnel(false);
+            lblAffichage.Text = "Liste des personnels";
         }
 
         /// <summary>

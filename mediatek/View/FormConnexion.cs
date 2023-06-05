@@ -2,7 +2,6 @@
 using mediatek.controller;
 using System;
 using System.Windows.Forms;
-using mediatek;
 
 namespace mediatek.View
 {
